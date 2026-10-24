@@ -1,0 +1,32 @@
+{
+  "Maize": [
+    {"issue": "Fall armyworm", "signs": "ragged holes in leaves, sawdust-like droppings in the leaf whorl",
+     "organic_remedies": ["Hand-pick larvae in the early morning", "Put dry sand or wood ash into the whorl", "Spray neem seed extract on young plants"]},
+    {"issue": "Maize lethal necrosis", "signs": "yellowing from leaf edges, stunted plants, dead heart",
+     "organic_remedies": ["No cure: uproot and destroy infected plants", "Rotate with non-cereal crops such as beans", "Use certified clean seed next season"]}
+  ],
+  "Tomato": [
+    {"issue": "Early blight", "signs": "brown spots with ring patterns on older leaves",
+     "organic_remedies": ["Remove and burn infected leaves", "Mulch to stop soil splash", "Rotate crops; copper-based spray from an agrovet only if allowed in organic production, follow the label"]},
+    {"issue": "Tuta absoluta", "signs": "winding tunnels in leaves, damaged fruit",
+     "organic_remedies": ["Pheromone traps from agrovets", "Remove and destroy infested leaves", "Neem or Bt-based products, follow the label"]}
+  ],
+  "Kale": [
+    {"issue": "Aphids", "signs": "clusters of small insects under leaves, curled sticky leaves",
+     "organic_remedies": ["Wash off with a strong water spray", "Spray soapy water or neem extract", "Protect ladybirds; avoid broad-spectrum pesticides"]},
+    {"issue": "Diamondback moth", "signs": "small holes in leaves, tiny green caterpillars",
+     "organic_remedies": ["Hand-pick caterpillars", "Spray neem extract", "Bt-based products, follow the label"]}
+  ],
+  "Beans": [
+    {"issue": "Bean rust", "signs": "small reddish-brown pustules on leaves",
+     "organic_remedies": ["Remove infected leaves", "Rotate with maize", "Space plants for airflow; use resistant varieties"]},
+    {"issue": "Bean stem maggot", "signs": "seedlings wilt, swelling at the stem base",
+     "organic_remedies": ["Earth up soil around the stem base", "Plant early with healthy seed", "Remove and destroy dead seedlings"]}
+  ],
+  "Potato": [
+    {"issue": "Late blight", "signs": "dark water-soaked patches on leaves, white fuzz underneath in damp weather",
+     "organic_remedies": ["Remove and destroy infected plants", "Avoid overhead watering", "Copper-based spray only if allowed, follow the label", "Plant certified seed tubers"]},
+    {"issue": "Bacterial wilt", "signs": "sudden wilting of healthy-looking plants",
+     "organic_remedies": ["Uproot and destroy infected plants (no cure)", "Rotate with non-potato crops for 3+ seasons", "Use certified clean seed"]}
+  ]
+}
