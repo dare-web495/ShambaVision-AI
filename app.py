@@ -25,9 +25,20 @@ if "show_refinement" not in st.session_state:
     st.session_state["show_refinement"] = False
 
 st.title("🌱 ShambaVision AI")
-st.caption("Take or upload a photo of your crop to get possible causes and organic remedies.")
+st.caption("Provide a description, photo, or both for high-speed diagnostic feedback.")
 
-crop = st.selectbox("Which crop?", ["Unknown"] + sorted(remedies.keys()))
+# Performance Optimization: Explicit location anchoring for fast lookup maps
+target_town = st.selectbox("Your Nearest Agricultural Hub:",
+                           ["Eldoret", "Kitale", "Meru", "Nakuru", "Nyeri", "Thika", "Nairobi"])
+
+crop_options = ["Unknown", "Other (Type below)"] + sorted(remedies.keys())
+selected_crop_base = st.selectbox("Which crop?", crop_options)
+crop = st.text_input("Enter custom crop name:",
+                     "") if selected_crop_base == "Other (Type below)" else selected_crop_base
+
+language = st.radio("Language", ["English", "Swahili"], horizontal=True)
+user_desc = st.text_area("Describe what you see on the plant (Optional):",
+                         placeholder="e.g., yellow spots, wilting leaves...")
 
 tab_cam, tab_up = st.tabs(["📷 Camera", "📁 Upload"])
 with tab_cam:
@@ -141,4 +152,5 @@ if result:
                         st.session_state["result"] = updated_res
                         st.rerun()
 
-    st.info("This is a guide, not a final diagnosis. Confirm serious problems with your local extension officer.")
+    st.info(
+        "Notice: This is an auxiliary advisory tool. Always cross-verify application guidelines with local agrovet professionals before use.")
