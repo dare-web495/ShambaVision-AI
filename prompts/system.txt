@@ -21,4 +21,3 @@ Rules:
   ],
   "see_extension_officer": {"needed": true, "reason": "..."}
 }
-{"name": "...", "confidence": "high|medium|low", "cause": "...", "symptoms_seen": "..."}
