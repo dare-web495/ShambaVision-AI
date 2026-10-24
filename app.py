@@ -26,7 +26,7 @@ tab_cam, tab_up = st.tabs(["📷 Camera", "📁 Upload"])
 with tab_cam:
     cam = st.camera_input("Photo of the affected leaf or plant")
 with tab_up:
-    up = st.file_uploader("Choose a photo", type=["jpg", "jpeg", "png"])
+    up = st.file_uploader("Choose a photo", type=["jpg", "jpeg", "png", "webp"])
 
 photo = cam or up
 if photo:
