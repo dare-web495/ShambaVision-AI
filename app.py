@@ -28,7 +28,6 @@ st.title("🌱 ShambaVision AI")
 st.caption("Take or upload a photo of your crop to get possible causes and organic remedies.")
 
 crop = st.selectbox("Which crop?", ["Unknown"] + sorted(remedies.keys()))
-language = st.radio("Language", ["English", "Swahili"], horizontal=True)
 
 tab_cam, tab_up = st.tabs(["📷 Camera", "📁 Upload"])
 with tab_cam:
