@@ -5,8 +5,6 @@ from llm import diagnose
 from llm import MODEL
 
 st.set_page_config(page_title="ShambaVision AI", page_icon="🌱")
-st.caption(f"Model: {MODEL}")
-
 
 @st.cache_data
 def load_json(name):
@@ -36,7 +34,6 @@ selected_crop_base = st.selectbox("Which crop?", crop_options)
 crop = st.text_input("Enter custom crop name:",
                      "") if selected_crop_base == "Other (Type below)" else selected_crop_base
 
-language = st.radio("Language", ["English", "Swahili"], horizontal=True)
 user_desc = st.text_area("Describe what you see on the plant (Optional):",
                          placeholder="e.g., yellow spots, wilting leaves...")
 
@@ -62,7 +59,7 @@ if st.button("Run Diagnostic Scan", type="primary"):
 
         reference = remedies.get(crop, {}) if crop in remedies else remedies
         with st.spinner("Processing analysis layers safely..."):
-            res = diagnose(photo_bytes, crop, language, reference, user_desc)
+            res = diagnose(photo_bytes, crop, reference, user_desc)
             st.session_state["result"] = res
             st.session_state["crop"] = crop
             st.session_state["location"] = target_town
