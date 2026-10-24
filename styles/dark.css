@@ -1,0 +1,24 @@
+:root {
+  --bg: #0e1612;
+  --card: #1a2620;
+  --text: #e8efe9;
+  --muted: #9fb0a5;
+  --line: #2b3a32;
+  --title: #6fcf97;
+  --warn: #3a2f14;
+}
+
+.stApp {color: #e8efe9;}
+[data-testid="stWidgetLabel"] p, [data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] li, [data-testid="stCaptionContainer"] p,
+[data-testid="stRadio"] label p, [data-testid="stToggle"] label p,
+[data-testid="stCameraInput"] label p {color: #e8efe9 !important;}
+div[data-baseweb="select"] > div, div[data-baseweb="input"],
+div[data-baseweb="input"] > div, input {background: #1a2620 !important; color: #e8efe9 !important;}
+div[data-baseweb="select"] div {color: #e8efe9 !important;}
+[data-testid="stExpander"] details {background: #1a2620; border-color: #2b3a32;}
+[data-testid="stExpander"] summary p {color: #e8efe9 !important;}
+button[data-baseweb="tab"] p {color: #e8efe9 !important;}
+[data-testid="stFileUploaderDropzone"] {background: #1a2620;}
+[data-testid="stFileUploaderDropzone"] small,
+[data-testid="stFileUploaderDropzone"] span {color: #9fb0a5 !important;}
