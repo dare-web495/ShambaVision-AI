@@ -1,9 +1,6 @@
 .env
-<<<<<<< HEAD
 .venv/
 __pycache__/
 *.pyc
 .pytest_cache/
-=======
-.env
->>>>>>> 53ce51804acc0db4d033f75e53c0999029ff8fb6
+state/
