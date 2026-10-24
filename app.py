@@ -4,6 +4,8 @@ from pathlib import Path
 import streamlit as st
 
 from llm import diagnose
+from llm import MODEL
+st.caption(f"Model: {MODEL}")
 
 st.set_page_config(page_title="ShambaVision AI", page_icon="🌱")
 
