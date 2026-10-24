@@ -1,0 +1,7 @@
+{
+  "Maize":  {"unit": "90 kg bag", "low_kes": 3000, "high_kes": 4500},
+  "Tomato": {"unit": "crate", "low_kes": 3000, "high_kes": 6000},
+  "Kale":   {"unit": "sack", "low_kes": 1000, "high_kes": 2000},
+  "Beans":  {"unit": "90 kg bag", "low_kes": 9000, "high_kes": 12000},
+  "Potato": {"unit": "50 kg bag", "low_kes": 1500, "high_kes": 3000}
+}
