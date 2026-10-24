@@ -36,7 +36,7 @@ selected_crop_base = st.selectbox("Which crop?", crop_options)
 crop = st.text_input("Enter custom crop name:",
                      "") if selected_crop_base == "Other (Type below)" else selected_crop_base
 
-language = st.radio("Language", ["English", "Swahili"], horizontal=True)
+language = st.radio("Language", ["English"], horizontal=True)
 user_desc = st.text_area("Describe what you see on the plant (Optional):",
                          placeholder="e.g., yellow spots, wilting leaves...")
 
